@@ -61,6 +61,57 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Hexo踩坑总结" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/post/Hexo踩坑总结.html" class="article-date">
+  <time datetime="2018-03-07T07:10:27.000Z" itemprop="datePublished">2018-03-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/post/Hexo踩坑总结.html">Hexo踩坑总结</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>前言：<br>最近闲来无事试着使用github+hexo建一个博客，之前就听人说过用github pages可以免费建一个静态页面的个人博客，但是一直以来忙着各种各样的杂事，刚好最近项目已经完成了大部分工作，只剩下验收部分，时间也比较充裕，所以试着玩玩博客。</p>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ol>
+<li>注册一个github账号</li>
+<li>买一个域名</li>
+<li><p>下载安装git和hexo<br>上面三步百度上都已经有很多详细教程，这里就不细说了。</p>
+<h2 id="一、为何Hexo使用命令提交后出现404"><a href="#一、为何Hexo使用命令提交后出现404" class="headerlink" title="一、为何Hexo使用命令提交后出现404"></a>一、为何Hexo使用命令提交后出现404</h2><p>这里有一个大坑，就是在写配置文件_config.yml时</p>
+<p> deploy:<br>  type: git<br>  repository: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:Lionhjw/hujiawei.github.io.git<br>  branch: master</p>
+</li>
+</ol>
+<p>在type、repository和bracnch三个键后面要先加空格再写具体的值，不然无法识别。</p>
+<h2 id="二、使用Hexo更新提交github后会导致域名文件CNAME失效"><a href="#二、使用Hexo更新提交github后会导致域名文件CNAME失效" class="headerlink" title="二、使用Hexo更新提交github后会导致域名文件CNAME失效"></a>二、使用Hexo更新提交github后会导致域名文件CNAME失效</h2><p>这里也是一个坑，很多网上的博客教程都没有说，还是在知乎才找到答案。这里要在source文件夹当中新建一个CNAME的文件（该文件没有后缀），然后里面的内容和github绑定域名时一样，写入你要绑定的域名。</p>
+<h2 id="三、-使用Hexo提交github后无法显示图片和样式的问题"><a href="#三、-使用Hexo提交github后无法显示图片和样式的问题" class="headerlink" title="三、 使用Hexo提交github后无法显示图片和样式的问题"></a>三、 使用Hexo提交github后无法显示图片和样式的问题</h2><p>其实和上面问题差不多，将public文件夹中的样式和图片各种资源文件复制到source文件夹中。然后重新编译提交</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="hujiawei.github.io/post/Hexo踩坑总结.html" data-id="cjegrxpqx000070numly1jatn" class="article-share-link">Teilen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo-博客/">Hexo 博客</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Markdown编辑器Cmd" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/post/Markdown编辑器Cmd.html" class="article-date">
@@ -171,7 +222,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="hujiawei.github.io/post/Markdown编辑器Cmd.html" data-id="cjegq3va00001hwnu8xdjclm6" class="article-share-link">Teilen</a>
+      <a data-url="hujiawei.github.io/post/Markdown编辑器Cmd.html" data-id="cjegrxprk000270nuhan601ew" class="article-share-link">Teilen</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown-编辑器-Cmd/">Markdown 编辑器 Cmd</a></li></ul>
@@ -196,7 +247,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown-编辑器-Cmd/">Markdown 编辑器 Cmd</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo-博客/">Hexo 博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown-编辑器-Cmd/">Markdown 编辑器 Cmd</a></li></ul>
     </div>
   </div>
 
@@ -206,7 +257,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Markdown-编辑器-Cmd/" style="font-size: 10px;">Markdown 编辑器 Cmd</a>
+      <a href="/tags/Hexo-博客/" style="font-size: 10px;">Hexo 博客</a> <a href="/tags/Markdown-编辑器-Cmd/" style="font-size: 10px;">Markdown 编辑器 Cmd</a>
     </div>
   </div>
 
@@ -226,6 +277,10 @@
     <h3 class="widget-title">letzter Beitrag</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/post/Hexo踩坑总结.html">Hexo踩坑总结</a>
+          </li>
         
           <li>
             <a href="/post/Markdown编辑器Cmd.html">Cmd Markdown 编辑器用法整理</a>
